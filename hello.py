@@ -12,7 +12,7 @@ def home():
 
 @app.route("/light-curves")
 def light_curves():
-    df = pd.read_csv("data/all_lightcurve_data_website_27052026.csv")
+    df = pd.read_csv("data/all_lightcurve_data_website_with_anderson_10092026.csv")
     
     selected_type = request.args.get("type", "all")
     selected_redshift = request.args.get("redshift", "all")
